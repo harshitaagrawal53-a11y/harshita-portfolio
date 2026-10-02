@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshita Agrawal | B.Tech CSE Student & Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Harshita Agrawal, 1st-year B.Tech CSE student at JECRC University. Web developer proficient in C, HTML/CSS, JavaScript, Git/GitHub, and AI tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>HA<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="resume.html" target="_blank" class="btn btn-outline nav-resume-btn">Resume</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>1st Year B.Tech CSE @ JECRC University</span>
+      </div>
+      <h1 class="hero-title">
+        Hello, I'm <span class="gradient-text">Harshita Agrawal</span>
+      </h1>
+      <h2 class="hero-subtitle">
+        <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+      </h2>
+      <p class="hero-description">
+        Passionate software engineering fresher building clean, accessible web interfaces and solving algorithmic logic. Blending core computer science with modern JavaScript and AI-assisted engineering workflows.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>Explore Projects</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <a href="resume.html" target="_blank" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>View Resume</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-value">3+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">95+</span>
+          <span class="stat-label">Lighthouse Score</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Hungry to Learn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Background</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging academic foundations with modern, practical software craftsmanship.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-about">
+          <h3>The Developer Journey</h3>
+          <p>
+            I am currently in my <strong>first semester of B.Tech in Computer Science and Engineering at JECRC University, Jaipur</strong>. Having graduated from <strong>AVM Convent School</strong>, I stepped into university with a genuine curiosity for how software empowers people.
+          </p>
+          <p>
+            While diving deep into foundational computation with <strong>C programming</strong>, I independently taught myself modern front-end web development with <strong>HTML5, CSS3, and JavaScript</strong>. 
+          </p>
+          <p>
+            I leverage modern <strong>AI developer tools</strong> to accelerate debugging, rapid prototyping, and architecture exploration. I believe being a junior developer today means learning faster, writing cleaner code, and shipping projects with version-controlled precision.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Location:</span>
+              <span class="meta-value">Jaipur, Rajasthan, India</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">College:</span>
+              <span class="meta-value">JECRC University</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Degree:</span>
+              <span class="meta-value">B.Tech CSE (2024 - 2028)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Status:</span>
+              <span class="meta-badge">Seeking Internship</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cards-subgrid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h4>Fast Execution</h4>
+            <p>I build and deploy functional prototypes quickly using modern toolchains and automated workflows.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h4>Core CS & Logic</h4>
+            <p>Hands-on practice in C programming, pointers, data structures, and memory-conscious problem solving.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h4>AI-Augmented</h4>
+            <p>Proficient in AI-assisted developer workflows to write cleaner documentation and solve blockers fast.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h4>Continuous Learner</h4>
+            <p>Active participant in campus coding societies, hackathons, and open source web exploration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Core technologies and developer tools I utilize to craft software.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="cat-icon">&lt;/&gt;</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-pill">
+              <span class="skill-name">C</span>
+              <span class="skill-level">Core Logic</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="skill-level">Modern</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-level">Semantic</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-level">Flex/Grid</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="cat-icon">🎨</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-pill">
+              <span class="skill-name">DOM Manipulation</span>
+              <span class="skill-level">Interactive</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-level">Mobile-First</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">LocalStorage API</span>
+              <span class="skill-level">State</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">CSS Variables & Animations</span>
+              <span class="skill-level">Theming</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="cat-icon">🛠️</span>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-pill">
+              <span class="skill-name">Git</span>
+              <span class="skill-level">Version Control</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-level">Collaboration</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">VS Code</span>
+              <span class="skill-level">Editor</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Chrome DevTools</span>
+              <span class="skill-level">Debugging</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Netlify / GitHub Pages</span>
+              <span class="skill-level">Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="cat-icon">✨</span>
+            <h3>AI & Modern Tooling</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-pill">
+              <span class="skill-name">AI Code Assistance</span>
+              <span class="skill-level">Efficiency</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Prompt Engineering</span>
+              <span class="skill-level">Structured</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Rapid Prototyping</span>
+              <span class="skill-level">Agile</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Doc Generation</span>
+              <span class="skill-level">Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Portfolio Showcase</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world projects demonstrating clean implementation, problem solving, and modern styling.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="c">C / Systems</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="web">
+          <div class="project-banner">
+            <div class="banner-badge">Web Application</div>
+            <div class="browser-mockup">
+              <div class="mockup-dots"><span></span><span></span><span></span></div>
+              <div class="mockup-bar">taskflow-app.web.app</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">TaskFlow — Interactive Productivity App</h3>
+            <p class="project-desc">
+              A dynamic client-side task and workflow management dashboard with persistent local storage, custom tagging, filter states, and smooth drag-free list reordering.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>LocalStorage</span>
+              <span>Netlify</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">
+                <span>Live Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://github.com/harshita-agrawal" target="_blank" class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="web">
+          <div class="project-banner">
+            <div class="banner-badge">Personal Portfolio</div>
+            <div class="browser-mockup">
+              <div class="mockup-dots"><span></span><span></span><span></span></div>
+              <div class="mockup-bar">harshitaagrawal.dev</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Personal Developer Portfolio</h3>
+            <p class="project-desc">
+              High-performance, accessible personal site engineered with semantic HTML, modern CSS with dark/light themes, and responsive design scoring 95+ on Lighthouse audits.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>Modern CSS</span>
+              <span>JavaScript</span>
+              <span>Accessibility</span>
+              <span>GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="#hero" class="btn btn-sm btn-primary">
+                <span>Current View</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://github.com/harshita-agrawal" target="_blank" class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="c">
+          <div class="project-banner">
+            <div class="banner-badge">Core C / CLI</div>
+            <div class="browser-mockup">
+              <div class="mockup-dots"><span></span><span></span><span></span></div>
+              <div class="mockup-bar">terminal ~/student-records</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Console Record Management Utility</h3>
+            <p class="project-desc">
+              A command-line tool built in C showcasing modular design, dynamic pointer arithmetic, structured records, file input/output persistence, and strict input validation.
+            </p>
+            <div class="project-tech">
+              <span>C Language</span>
+              <span>GCC</span>
+              <span>File I/O</span>
+              <span>Data Structures</span>
+              <span>CLI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/harshita-agrawal" target="_blank" class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>View Source Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Milestones</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic trajectory and coursework in Computer Science.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- University -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-badge">2024 – 2028 (In Progress)</span>
+            <h3 class="timeline-title">JECRC University, Jaipur</h3>
+            <h4 class="timeline-subtitle">Bachelor of Technology (B.Tech) — Computer Science and Engineering</h4>
+            <p class="timeline-desc">
+              Focusing on programming problem-solving with C, computer system fundamentals, discrete mathematics, and web engineering. Active in student coding community sessions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Class XII -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-badge">Graduated 2024</span>
+            <h3 class="timeline-title">AVM Convent School</h3>
+            <h4 class="timeline-subtitle">Senior Secondary Education (Class XII) — Science Stream (PCM)</h4>
+            <p class="timeline-desc">
+              Strong mathematical foundation, analytical reasoning, and physics fundamentals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-badge">Graduated 2022</span>
+            <h3 class="timeline-title">AVM Convent School</h3>
+            <h4 class="timeline-subtitle">Secondary School Examination (Class X)</h4>
+            <p class="timeline-desc">
+              Developed early passion for computers, technology, and science subjects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm currently seeking a Software Development Intern role. Feel free to reach out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <h3>Contact Details</h3>
+          <p>Whether you have an internship opportunity, project feedback, or want to say hi, my inbox is always open.</p>
+
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-detail">
+              <span class="label">Email Address</span>
+              <span class="value" id="email-text">harshitaagrawal53@gmail.com</span>
+            </div>
+            <button class="copy-btn" id="copy-email-btn" title="Copy email address">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span id="copy-label">Copy</span>
+            </button>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <span class="label">Location</span>
+              <span class="value">Jaipur, Rajasthan, India</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <div class="contact-detail">
+              <span class="label">Profiles</span>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/harshita-agrawal" target="_blank" class="social-link">LinkedIn</a>
+                <span class="dot">•</span>
+                <a href="https://github.com/harshita-agrawal" target="_blank" class="social-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="e.g. rahul@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Collaboration" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hello Harshita, we'd love to invite you for a chat..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Harshita Agrawal • Built with HTML5, CSS3 & JavaScript</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
